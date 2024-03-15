@@ -1,0 +1,21 @@
+shoppingList-useimmer
+
+My implementation is a basic functionality of how useimmer works with a draft for easy immutability 
+
+my add function initalizes the state with useImmer for the shopping list along with two seperate useImmer state variables for adding new items to the list that are for item name and quantity. 
+
+I also added input validation for item name and quantity and refs for the input fields for focus primarily to the main input field for adding items
+
+although details in the shopping list object are defined, i dont actually utilize them in this implementation though they can be added to be displayed and useimmer can handle the updates of those as well. 
+
+items are easily added to the draft state with draft.push using the setShoppingList state updater
+
+input fields also get reset as well the same way with their respective state updaters
+
+updateItem and removeItem work similarily and shows the easy code readbility and functionality how using the draft state and being able to seemlessly mutate the data. 
+
+the UI elements feature the header and two input fields followed by an add item button next to it.
+you enter the data in the two input fields and click add item and a list is created of all your items.
+you can remove an item from the list as well from clicking the remove item button next to the item in your current list. 
+
+overall the useImmer hook demonstrates easy immuntability with using mutability within a draft state and can update the state seemlessly without the need of creating copies of arrays or objects as with useState.  
